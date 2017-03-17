@@ -1,0 +1,10 @@
+/* some css */
+
+
+/* put this under /public/* */
+
+body {
+    font-family: 'Anonymous Pro';
+    color: #CB4154;
+    font-size: 15px;
+}

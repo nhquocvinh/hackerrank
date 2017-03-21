@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="hackerrank">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./styles/site.css" />
-    <script type="text/javascript" src="./scripts/test/index.js"></script>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./styles/site.css" />
 
-    <title>hackerrank</title>
+  <title>hackerrank</title>
 </head>
 
-<body>
-    <h1>hackerrank</h1>
+<body ng-controller="MainCtrl as main">
+  <h1 class="wrapper title">hackerrank</h1>
+  <h3 class="wrapper title">MainCtrl as main</h3>
+
+  <div>
+    <tabs active="0">
+      <tab label="Tab 1">
+        Tab 1 contents!
+      </tab>
+      <tab label="Tab 2">
+        Tab 2 contents!
+      </tab>
+      <tab label="Tab 3">
+        Tab 3 contents!
+      </tab>
+    </tabs>
+  </div>
+
+  <div ng-controller="InputCtrl as input">
+    <fieldset>
+      <span class="title">InputCtrl as input</span>
+      <input class="input" type="input" name="Title" ng-model="input.title">
+      <button class="button" ng-click="input.adding($event)">okay</button>
+    </fieldset>
+  </div>
+
+  <script type="text/javascript" src="./scripts/Apps/angular.min.js"></script>
+  <script type="text/javascript" src="./scripts/Apps/service.js"></script>
+  <script type="text/javascript" src="./scripts/Apps/directive.js"></script>
+  <script type="text/javascript" src="./scripts/Apps/index.js"></script>
+  <script type="text/javascript" src="./scripts/Apps/controller.js"></script>
+
 </body>
 
 </html>

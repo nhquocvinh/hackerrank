@@ -3,8 +3,80 @@
 
 /* put this under /public/* */
 
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+fieldset {
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+    font-family: 'Anonymous Pro';
+    margin: 0 auto;
+    width: 600px;
+}
+
+label,
+input,
+button {
+    font-size: inherit;
+    padding: 0.2em;
+    margin: 0.1em 0.2em;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.wrapper {
+    margin: 25px;
+}
+
+.input {
+    height: 100%;
+}
+
+.title {}
+
+.button {
+    cursor: pointer;
+    color: #CB4154;
+}
+
 body {
+    background: #eee;
+    margin: 0;
+    padding: 0;
     font-family: 'Anonymous Pro';
     color: #CB4154;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.tabs {
+    margin: 25px;
+    background: #fff;
+}
+
+.tabs__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.tabs__list li {
+    float: left;
+}
+
+.tabs__list li a {
+    color: #444;
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.tabs__content {
+    padding: 10px;
 }
